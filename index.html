@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Prosple Vanilla JS Widget Demo</title>
+  <meta name="description" content="HTML Showcase of the Prosple Search Widget">
+  <meta name="author" content="Prosple">
+
+  <style>body {
+      background-color: rgb(244, 246, 250);
+    }</style>
+
+  <link rel="stylesheet" href="/search-widget-demo/src.css">
+
+<body>
+  <h1>Prosple Legacy Search JS Widget Demo</h1>
+  <p>
+    <a href="/search-widget-demo/new-search.html">Go to New Search</a>
+  </p>
+  <section id="prosple-search-widget">
+
+  <script>var $PROSPLE_SEARCH_ID = 23; // available search types
+// career_opportunity, course, employer, institution,
+// scholarship, article, story
+
+var $PROSPLE_SEARCH_NODE_TYPE = "course";
+var $PROSPLE_SEARCH_ENDPOINT = "https://search.studyperth.com.au/courses";
+var $PROSPLE_SEARCH_DROPDOWNS = [{
+  label: "I Want to Study This Field",
+  emptyOptionText: "All fields of study",
+  filterCondition: "study_field",
+  facet: "study_field_tids"
+}, {
+  label: "At This Level",
+  emptyOptionText: "Any Levels",
+  filterCondition: "degree_type",
+  facet: "degree_type"
+}];</script>
+  <script src="/search-widget-demo/prosple-search.js"></script>
+</section></body>
+</html>
