@@ -20,24 +20,25 @@
   </p>
   <section id="prosple-search-widget">
 
-  <script>var $PROSPLE_SEARCH_ID = 6;
+  <script>var $PROSPLE_SEARCH_ID = 10;
 
-    var $PROSPLE_SEARCH_NODE_TYPE = "career_opportunity";
-    var $PROSPLE_SEARCH_ENDPOINT = "https://gradaustralia.com.au/search-jobs";
+    var $PROSPLE_SEARCH_NODE_TYPE = "employer";
+    var $PROSPLE_SEARCH_ENDPOINT = "https://careers.accsocunsw.com/graduate-employers?locations=9692&defaults_applied=1";
 
     var $PROSPLE_SEARCH_DROPDOWNS = [
       {
-        label: "I'm Looking For",
-        emptyOptionText: "Any Opportunity Type",
-        filterCondition: "opportunity_types",
-        facet: "opportunity_types",
-      },
-      {
-        label: "I'm Studying",
-        emptyOptionText: "Any Study Field",
+        label: "FIND EMPLOYERS",
+        emptyOptionText: "Any Study Area",
         filterCondition: "study_field",
-        facet: "study_field_tids",
-      },
+        facet: "study_field_tids"
+      }, 
+      // Comment out for testing
+      // {
+      //   label: "I'm Studying",
+      //   emptyOptionText: "Any Study Field",
+      //   filterCondition: "study_field",
+      //   facet: "study_field_tids",
+      // },
     ];</script>
   <script src="/search-widget-demo/prosple-search-v2.0.js"></script>
 </section></body>
