@@ -20,23 +20,33 @@
   </p>
   <section id="prosple-search-widget">
 
-  <script>var $PROSPLE_SEARCH_ID = 23; // available search types
-// career_opportunity, course, employer, institution,
-// scholarship, article, story
+  <script>var $PROSPLE_SEARCH_ID = 23; 
 
-var $PROSPLE_SEARCH_NODE_TYPE = "course";
-var $PROSPLE_SEARCH_ENDPOINT = "https://search.studyperth.com.au/courses";
+// available search types
+// career_opportunity, course, employer
+
+// available facets:
+// career_opportunity & course
+// opportunity_types, study_field_tids, locations, industry_sectors
+// employer
+//study_field_tids, locations, industry_sectors
+
+var $PROSPLE_SEARCH_NODE_TYPE = "employer";
+var $PROSPLE_SEARCH_ENDPOINT = "https://careers.accsocunsw.com/graduate-employers?locations=9692&defaults_applied=1";
 var $PROSPLE_SEARCH_DROPDOWNS = [{
-  label: "I Want to Study This Field",
-  emptyOptionText: "All fields of study",
+  label: "FIND EMPLOYERS",
+  emptyOptionText: "Any Study Area",
   filterCondition: "study_field",
   facet: "study_field_tids"
-}, {
-  label: "At This Level",
-  emptyOptionText: "Any Levels",
-  filterCondition: "degree_type",
-  facet: "degree_type"
-}];</script>
+}, 
+// Comment out for testing
+// {
+//   label: "At This Level",
+//   emptyOptionText: "Any Levels",
+//   filterCondition: "degree_type",
+//   facet: "degree_type"
+// }
+];</script>
   <script src="/search-widget-demo/prosple-search-v2.0.js"></script>
 </section></body>
 </html>
