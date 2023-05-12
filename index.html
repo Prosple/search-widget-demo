@@ -20,23 +20,27 @@
   </p>
   <section id="prosple-search-widget">
 
-  <script>var $PROSPLE_SEARCH_ID = 23; // available search types
+  <script>var $PROSPLE_SEARCH_ID = 6; // available search types
 // career_opportunity, course, employer, institution,
 // scholarship, article, story
 
-var $PROSPLE_SEARCH_NODE_TYPE = "course";
-var $PROSPLE_SEARCH_ENDPOINT = "https://search.studyperth.com.au/courses";
-var $PROSPLE_SEARCH_DROPDOWNS = [{
-  label: "I Want to Study This Field",
-  emptyOptionText: "All fields of study",
-  filterCondition: "study_field",
-  facet: "study_field"
-}, {
-  label: "At This Level",
-  emptyOptionText: "Any Levels",
-  filterCondition: "degree_type",
-  facet: "degree_type"
-}];</script>
+var $PROSPLE_SEARCH_NODE_TYPE = "career_opportunity";
+  var $PROSPLE_SEARCH_ENDPOINT = "https://notredame-careerportal.prosple.com/search-jobs?locations=9692&defaults_applied=1";
+  var $PROSPLE_SEARCH_DROPDOWNS = [
+      {
+        label: "I'm looking for",
+        emptyOptionText: 'Any Opportunity Type',
+        filterCondition: 'opportunity_type',
+        facet: 'opportunity_types',
+      },
+      {
+        label: "I Want to Study This Field",
+        emptyOptionText: "All fields of study",
+        filterCondition: "study_field",
+        facet: "study_fields",
+      }
+    ];
+  </script>
   <script src="/search-widget-demo/prosple-search-v2.0.js"></script>
 </section></body>
 </html>
